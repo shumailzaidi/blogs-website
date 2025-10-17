@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tech zaidi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Tech zaidi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blogs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Fullstack Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Aritificial Intelligence</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Computer Graphic</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Machine learning</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contactus.html">Contact us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                        up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Login Form-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login To Tech zaidi </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!--Login Form-->
+                    <form>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Sign Up Form-->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Sign up To Tech zaidi </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!--sign Up Form-->
+                    <h4>Register To Tech zaidi</h4>
+                    <form>
+
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Your full Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                placeholder=" Enter Your full Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Phone No.</label>
+                            <input type="tell" class="form-control" id="formGroupExampleInput2"
+                                placeholder="Enter Phone No">
+
+                        </div>
+                        <label for="formGroupExampleInput2" class="form-label">Your city</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select your City</option>
+                            <option value="1">Delhi</option>
+                            <option value="2">Muzaffarnager</option>
+                            <option value="3">Bijnor </option>
+                            <option value="4">Muradabad</option>
+                            <option value="5">chandighad</option>
+                            <option value="6">shamli</option>
+                            <option value="7">Merut</option>
+                            <option value="8">Chanai</option>
+                            <option value="9">Bulandshahar</option>
+                            <option value="10">Gurugao</option>
+                            <option value="11">Amamdadad</option>
+                            <option value="12">Indor</option>
+                            <option value="13">Haderabad</option>
+                            <option value="14">Patana</option>
+                            <option value="15">Gadhinager</option>
+
+                        </select>
+                        <br>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email id</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                                <br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault" checked>
+                                    <label class="form-check-label" for="checkDefault">
+                                        Read Terms and Condiion
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Sign up</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--carousell-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner carousel slide carousel-fade">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="/Digital.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Digital Marketing</h3>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <button type="button" class="btn btn-primary">Read More</button>
+                    <button type="button" class="btn btn-warning">Visit Blog</button>
+                    <button type="button" class="btn btn-danger">Rate us</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="/Fullstack.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                    <p></p>
+                    <button type="button" class="btn btn-primary">Read More</button>
+                    <button type="button" class="btn btn-warning">Visit Blog</button>
+                    <button type="button" class="btn btn-danger">Rate us</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="/Graphic.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Graphic Desgning</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <button type="button" class="btn btn-primary">Read More</button>
+                    <button type="button" class="btn btn-warning">Visit Blog</button>
+                    <button type="button" class="btn btn-danger">Rate us</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="/Artificial.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                    <button type="button" class="btn btn-primary">Read More</button>
+                    <button type="button" class="btn btn-warning">Visit Blog</button>
+                    <button type="button" class="btn btn-danger">Rate us</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Blog1 page-->
+    <div class="container my-3">
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static"> <strong
+                            class="d-inline-block mb-2 text-primary-emphasis"> AI World</strong>
+                        <h3 class="mb-0">Aritificial Intelligence</h3>
+                        <div class="mb-1 text-body-secondary">Nov 12, 2025</div>
+                        <p class="card-text mb-auto"> Artificial Intelligence (AI) refers to the development of computer
+                            systems capable of performing tasks that typically require human intelligence, such as
+                            learning, reasoning, problem-solving, and decision-making across various industries.
+
+                        </p> <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <!-- <svg class="bi" aria-hidden="true">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg> -->
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="/AI blog.jpg" alt="" width="200" height="250">
+
+                        <!--<svg aria-label="Placeholder: Thumbnail"
+                            class="bd-placeholder-img " height="250" preserveAspectRatio="xMidYMid slice" role="img"
+                            width="200" xmlns="http://www.w3.org/2000/svg">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Thumbnail</text>
+                        </svg> -->
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static"> <strong
+                            class="d-inline-block mb-2 text-success-emphasis"> APP Design</strong>
+                        <h3 class="mb-0">Flutter</h3>
+                        <div class="mb-1 text-body-secondary">Nov 11, 2025</div>
+                        <p class="mb-auto"> Designing a text app requires intuitive UI, fast messaging, secure
+                            encryption, user-friendly features, and cross-platform compatibility for optimal
+                            communication.
+
+                        </p> <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="/APP blog.jpg" alt="" width="200" height="250">
+                        <!--<svg aria-label="Placeholder: Thumbnail"
+                            class="bd-placeholder-img " height="250" preserveAspectRatio="xMidYMid slice" role="img"
+                            width="200" xmlns="http://www.w3.org/2000/svg">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Thumbnail</text>
+                        </svg> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Blog2 page-->
+    <div class="container my-3">
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static"> <strong
+                            class="d-inline-block mb-2 text-primary-emphasis">Info Advance</strong>
+                        <h3 class="mb-0">Digital Marketing</h3>
+                        <div class="mb-1 text-body-secondary">Nov 12, 2025</div>
+                        <p class="card-text mb-auto"> Digital marketing leverages SEO, social media, content, email, and
+                            analytics to effectively promote brands, engage target audiences, and drive measurable
+                            business growth and conversions.</p> <a href="#"
+                            class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <!-- <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg> -->
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="/Digi blog.jpg" alt="" width="200" height="250">
+
+                        <!--<svg aria-label="Placeholder: Thumbnail"
+                        class="bd-placeholder-img " height="250" preserveAspectRatio="xMidYMid slice" role="img"
+                        width="200" xmlns="http://www.w3.org/2000/svg">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em">Thumbnail</text>
+                    </svg> -->
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static"> <strong
+                            class="d-inline-block mb-2 text-success-emphasis"> Info Tech</strong>
+                        <h3 class="mb-0">Video Editing</h3>
+                        <div class="mb-1 text-body-secondary">Nov 11, 2025</div>
+                        <p class="mb-auto"> Create stunning videos by cutting, trimming, adding effects, music, and
+                            transitions to craft a polished, professional visual story.
+                        </p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="/Edit blog.jpg" alt="" width="200" height="250">
+                        <!--<svg aria-label="Placeholder: Thumbnail"
+                        class="bd-placeholder-img " height="250" preserveAspectRatio="xMidYMid slice" role="img"
+                        width="200" xmlns="http://www.w3.org/2000/svg">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em">Thumbnail</text>
+                    </svg> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Body of Home Page-->
+    <div class="container">
+        <div class="container py-4">
+            <header class="pb-3 mb-4 border-bottom border-top"> <a href="/"
+                    class="d-flex align-items-center text-body-emphasis text-decoration-none"> <svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94"
+                        role="img">
+                        <title>Bootstrap</title>
+                        <!--<path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                            fill="currentColor"></path> -->
+                    </svg> <span class="fs-4">Top Trends</span> </a> </header>
+            <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">Freelancing Skills</h1>
+                    <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the
+                        one in previous versions of Bootstrap. Check out the examples below for how you can remix and
+                        restyle it to your liking.</p> <button class="btn btn-primary btn-lg" type="button">Read More
+                    </button>
+                </div>
+            </div>
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 text-bg-dark rounded-3">
+                        <h2>Aritificial Intelligence</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron
+                            look. Then, mix and match with additional component themes and more.</p> <button
+                            class="btn btn-outline-light" type="button">Get Registers</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                        <h2>High Income Skills</h2>
+                        <p>Or, keep it light and add a border for some added definition to the boundaries of your
+                            content. Be sure to look under the hood at the source HTML here as we've adjusted the
+                            alignment and sizing of both column's content for equal-height.</p> <button
+                            class="btn btn-outline-secondary" type="button">Get Idea</button>
+                    </div>
+                </div>
+            </div>
+            <footer class="pt-3 mt-4 text-body-secondary border-top">
+                © 2025 </footer>
+        </div>
+    </div>
+    <!--Registratation For-->
+
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Get Register with us sign-up form
+                </h1>
+                <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls.
+                    Each required form group has a validation state that can be triggered by attempting to submit
+                    the form without completing it.</p>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+                <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <div class="form-floating mb-3"> <input type="email" class="form-control" id="floatingInput"
+                            placeholder="name@example.com"> <label for="floatingInput">Email address</label> </div>
+                    <div class="form-floating mb-3"> <input type="password" class="form-control" id="floatingPassword"
+                            placeholder="Password"> <label for="floatingPassword">Password</label> </div>
+                    <div class="checkbox mb-3"> <label> <input type="checkbox" value="remember-me"> Remember me
+                        </label> </div> <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+                    <hr class="my-4"> <small class="text-body-secondary">By clicking Sign up, you agree to the terms
+                        of use.</small>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Dark Button-->
+    <div class="container">
+        <div class="bg-dark text-secondary px-4 py-5 text-center">
+            <div class="py-5">
+                <h1 class="display-5 fw-bold text-white">Learn Freelancing Skills</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
+                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> <button type="button"
+                            class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Get Register</button> <button
+                            type="button" class="btn btn-outline-light btn-lg px-4">Read More</button> </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--Footer -->
+    <div class="container">
+        <footer
+            class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-secondary p-3">
+            <div class="col-md-4 d-flex align-items-center"> <a href="/"
+                    class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
+                    <!-- <svg class="bi" width="30" height="24" aria-hidden="true"> -->
+                    <i class="fa-regular fa-image fs-3"></i>
+                    <use xlink:href="#bootstrap"></use></svg>
+                </a> <span class="mb-3 mb-md-0 text-body-secondary">copyright Tech zaidi</span> </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram">
+
+                        <!--  <svg class="bi"
+                            width="24" height="24" aria-hidden="true">
+                            <use xlink:href="#instagram"></use>
+                        </svg> -->
+                    </a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/@technicalit804"
+                        aria-label="Facebook">
+                        <i class="fa-brands fa-youtube fs-5"></i>
+                        <i class="fa-brands fa-facebook fs-5"></i>
+                        <i class="fa-brands fa-instagram fs-5"></i>
+                    
+
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a></li>
+
+                       <h6> Contact No:9568955236</h6> 
+            </ul>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
